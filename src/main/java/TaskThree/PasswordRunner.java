@@ -18,6 +18,8 @@ public class PasswordRunner {
                 |    Password                      |
                 |                   Generator      |
                 -----------------------------------|
+
+                /exit - выход , выведется допалнительная информация
                 """);
 
 
@@ -25,7 +27,7 @@ public class PasswordRunner {
             System.out.println("\u001B[37m"+"Введите длину пароля");
             String input = scanner.nextLine();
 
-            if (input.equals("exit")) {
+            if (input.equals("/exit")) {
                 break;
             }
             while (true) {
