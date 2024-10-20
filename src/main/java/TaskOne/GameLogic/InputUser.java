@@ -1,7 +1,5 @@
 package TaskOne.GameLogic;
 
-//import lombok.SneakyThrows;
-
 import TaskOne.Entity.Word;
 
 import java.util.Scanner;
@@ -11,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class InputUser {
     private static final Scanner scanner = new Scanner(System.in);
-    private static final Pattern pattern = Pattern.compile("[а-яё]");
+    private static final Pattern pattern = Pattern.compile("[а-яё|/con|/exit]");
 
     public static String inputUser(Word word) {
         String input = scanner.nextLine();
